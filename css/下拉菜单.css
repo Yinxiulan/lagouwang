@@ -1,0 +1,41 @@
+ul{
+    list-style-type: none;
+}
+ul,li{
+margin: 0;
+padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/* 一级菜单项设为相对定位*/
+.banList>li{
+    position: relative;
+    width: 700px; 
+    height: 45px;
+    line-height: 45px;  
+}
+/* 设置二级菜单 */
+.banList>li>ul{
+position: absolute;
+top:25px;
+left:230px;
+border: 1px solid #ccc;
+}
+/* 二级菜单项 */
+.banList >li>ul>li{
+    float: left;
+    /* width:100px; */
+    height:35px;
+    line-height: 35px;
+    padding:5px 10px;
+}
+.banList >li>ul>li:hover{
+    color:red;
+}
+.banList>li>ul{
+    display: none;
+}
+.banList>li:hover>ul{
+    display: block;
+}
